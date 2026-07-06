@@ -3,5 +3,5 @@
 - Write some basic code
 - How to execute code
 - File System (Just to show)
-- REPL exampe
+- REPL exampe => Read-Eval-Print Loop
 - Interview Questions
