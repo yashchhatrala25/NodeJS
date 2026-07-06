@@ -45,3 +45,33 @@ Or you can send the response directly:
 # How to End a Process in Node.js?
 - Answer: process.exit();
 - process.exit() immediately terminates the current Node.js process.
+
+# How to create Dynamic PORTS?
+```
+const http = require('http');
+
+const port = Number(process.argv[2]);
+
+if (!port || port < 1 || port > 65535) {
+  console.error('Usage: node server.js <port>');
+  process.exit(1);
+}
+
+const server = http.createServer((req, res) => {
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
+  res.end('Testing input from CMD');
+});
+
+server.listen(port, () => {
+  console.log(`Server is running on http://localhost:${port}`);
+});
+```
+```
+node server.js 3000
+```
+
+- process.argv[2] retrieves the port number passed from the command line.
+- Number() converts the argument from a string to a number.
+- The validation ensures the port is within the valid range (1–65535).
+- server.listen(port) starts the server on the specified port.
+- The callback logs the URL once the server is ready.
