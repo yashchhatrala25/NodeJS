@@ -1,0 +1,23 @@
+{
+  "name": "node-2026",
+  "version": "1.0.0",
+  "description": "learning nodejs",
+  "homepage": "https://github.com/yashchhatrala25/NodeJS#readme",
+  "bugs": {
+    "url": "https://github.com/yashchhatrala25/NodeJS/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yashchhatrala25/NodeJS.git"
+  },
+  "license": "ISC",
+  "author": "yash chhatrala",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}
