@@ -41,3 +41,7 @@ res.end();
 ```
 Or you can send the response directly:
 ```
+
+# How to End a Process in Node.js?
+- Answer: process.exit();
+- process.exit() immediately terminates the current Node.js process.
