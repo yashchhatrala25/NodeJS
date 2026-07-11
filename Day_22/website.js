@@ -15,7 +15,7 @@ const server = http.createServer((req, res) => {
     console.log("html"+file+".html",)
 
     if (req.url != '/style.css') {
-        fs.readFile('html/"+file+".html', 'utf-8', (err, data) => {
+        fs.readFile(`html${file}.html`, "utf-8", (err, data) => {
             if (err) {
                 res.writeHead(500, {"content-type": "text/plain"});
                 res.end("interal server error");
